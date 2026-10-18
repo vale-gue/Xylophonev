@@ -20,51 +20,52 @@
             android:id="@+id/tasto_do"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/red"
-            style = "@style/keyStyle">
+            android:onClick="PlayDo"
+            style = "@style/keyStyle"/>
 
         <Button
             android:id="@+id/tasto_re"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/orange"
-            style = "@style/keyStyle">
+            android:onClick="PlayRe"
+            style = "@style/keyStyle"/>
         <Button
             android:id="@+id/tasto_mi"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/yellow"
-            style = "@style/keyStyle">
+            android:onClick="PlayMi"
+            style = "@style/keyStyle"/>
         <Button
             android:id="@+id/tasto_fa"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/green"
-            style = "@style/keyStyle">
+            android:onClick="PlayFa"
+            style = "@style/keyStyle"/>
         <Button
             android:id="@+id/tasto_sol"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/turquoise"
-            style = "@style/keyStyle">
+            android:onClick="PlaySol"
+            style = "@style/keyStyle"/>
         <Button
             android:id="@+id/tasto_la"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/blu"
-            style = "@style/keyStyle">
+            android:onClick="PlayLa"
+            style = "@style/keyStyle"/>
         <Button
             android:id="@+id/tasto_si"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text=""
             android:backgroundTint="@color/purple"
-            style = "@style/keyStyle">
+            android:onClick="PlaySi"
+            style = "@style/keyStyle"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

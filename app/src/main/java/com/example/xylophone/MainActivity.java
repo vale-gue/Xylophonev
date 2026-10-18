@@ -1,8 +1,8 @@
 package com.example.xylophone;
 
-import android.media.AudioAttributes;
-import android.media.SoundPool;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,20 +12,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final int NR_OF_SIMULTANEOUS_SOUND = 7;
-    private final float LEFT_VOLUME = 1.0f;
-    private final float RIGHT_VOLUME = 1.0f;
-    private final int NO_LOOP = 0;
-    private final int PRIORITY = 0;
-    private final float NORMAL_PLAY_RATE = 1.0f;
-    private int mDOSoundId;
-    private int mRESoundId;
-    private int mMISoundId;
-    private int mFASoundId;
-    private int mSOLSoundId;
-    private int mLASoundId;
-    private int mSISoundId;
-    private SoundPool mSoundPool;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,5 +24,38 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    AudioAttributes AudioAttributes
+    public void PlayDo(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note1_c);
+        mediaPlayer.start();
+    }
+
+    public void PlayRe(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note2_d);
+        mediaPlayer.start();
+    }
+
+    public void PlayMi(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note3_e);
+        mediaPlayer.start();
+    }
+
+    public void PlayFa(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note4_f);
+        mediaPlayer.start();
+    }
+
+    public void PlaySol(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note5_g);
+        mediaPlayer.start();
+    }
+
+    public void PlayLa(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note6_a);
+        mediaPlayer.start();
+    }
+
+    public void PlaySi(View view) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note7_b);
+        mediaPlayer.start();
+    }
 }
